@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+:root {
+    --size: 24px;
+}
+
+/* header  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    z-index: 100;
+    background-color: white;
+}
+
+/* left-icons */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.youtube-icon {
+    height: 20px;
+}
+
+.hamburger-icon {
+    height: 24px;
+    margin: 0 24px;
+}
+
+/* middle */
+.middle {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 470px;
+    margin-left: 60px;
+}
+
+.search-bar {
+    height: 40px;
+    font-size: 16px;
+    flex: 1;
+    min-width: 0;
+    padding-left: 12px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 0px 1px 2px #eeeeee;
+}
+
+.search-icon {
+    height: 40px;
+    width: 64px;
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.search-icon img {
+    height: var(--size);
+}
+
+.voice-icon {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 2rem;
+    background-color: #f5f2f2;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.voice-icon img {
+    height: var(--size);
+}
+
+
+/* Right-icons */
+.right {
+    display: flex;
+    align-items: center;
+    width: 182px;
+    justify-content: space-between;
+    margin-right: 24px;
+    margin-left: 29px;
+    flex-shrink: 0;
+}
+
+.right-icons {
+    --size: 24px;
+    margin: 0 10px;
+    height: var(--size);
+}
+
+/* side-bar */
+.side-bar {
+    top: 56px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 200;
+    background-color: white;
+}
+
+.side-bar .sidebar-link {
+    width: 72px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 9px;
+}
+
+.side-bar .sidebar-link img {
+    height: var(--size);
+
+}
+
+/* videos - section  */
+.videos-container{
+    background-color: #f9f9f9;
+}
