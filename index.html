@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" media="screen and (max-width:435px)" href="Css/phone.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
     <header>
         <div class="left">
             <img src="Images/Icons/hamburger-menu.svg" alt="" class="hamburger-icon">
-            <img src="Images/Icons/youtube-logo.svg" alt="" class="youtube-icon">
+            <a href="index.html"><img src="Images/Icons/youtube-logo.svg" alt="" class="youtube-icon"></a>
         </div>
         <div class="middle">
             <input type="text" name="search" id="" placeholder="Search" class="search-bar">
@@ -26,9 +24,9 @@
         </div>
         <div class="right">
             <img src="Images/Icons/upload.svg" alt="" class="right-icons">
-            <img src="Images/Icons/youtube-apps.svg" alt="" class="right-icons">
+            <!-- <img src="Images/Icons/youtube-apps.svg" alt="" class="right-icons"> -->
             <img src="Images/Icons/notifications.svg" alt="" class="right-icons">
-            <img src="Images/Icons/mylogo" alt="" class="right-icons">
+            <img src="Images/Icons/mylogo" alt="" class="right-icons" id="profile">
         </div>
     </header> 
     <nav class="side-bar">
@@ -50,201 +48,9 @@
         </div>
     </nav>
     <div class="main-section">
-        <div class="videos-container">
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course-Begginer to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <div class="thumbnail-container">
-                    <img src="Images/Thumbnails/thumbnail1.webp" alt="" class="thumbnail">
-                    <div class="duration">18:00</div>
-                </div>
-                <div class="video-info">
-                    <div class="channel-logo">
-                        <img src="Images/Thumbnails/my-channel.jpeg" alt="" class="channel-img">
-                    </div>
-                    <div class="video-info-content">
-                        <p class="video-title">HTML & CSS Full Course - zero to Pro</p>
-                        <p class="channel-name">SuperSimpleDev</p>
-                        <p class="video-stats">1.4M views 4 months ago</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="videos-container" id="videos-container"></div>
     </div>
+    <script src="Script.js"></script>
 </body>
 
 </html>
