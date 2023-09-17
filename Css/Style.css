@@ -162,6 +162,9 @@ header {
 .right-icons:hover {
     background-color: #cccccc;
 }
+#right-search{
+    display: none;
+}
 
 /* side-bar */
 .side-bar {

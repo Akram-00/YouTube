@@ -187,13 +187,7 @@ video_titles = [
 
 let duration = [[6, 43, 35], [13, 18], [54, 35], [6, 1], [23, 3], [1, 4, 1], [1, 6, 21], [8, 33], [6, 34], [1, 28, 43]]
 
-
-
 let durationArray = videoDuration(duration);
-
-
-
-
 
 var videosContainer = document.querySelector(".videos-container");
 let video = [];
@@ -204,3 +198,8 @@ for (let i = 0; i < 12; i++) {
     video[i] = createVideo(i+1, i+1, video_titles[i], channel_names[i], `${views[i]} views • ${result[i]}`, durationArray[i]);
     videosContainer.appendChild(video[i]);
 }
+
+
+
+
+
