@@ -1,9 +1,12 @@
-function createVideo(thumbnailSrc, channellogo, videoTitle, channelname, videoStats, duration, videoLink) {
+function createVideo(thumbnailSrc, channellogo, videoTitle, channelname, videoStats, duration, videoLink ,channelLink) {
     const videoContainer = document.createElement("div");
     videoContainer.className = "video";
 
     const thumbnailContainer = document.createElement("div");
     thumbnailContainer.className = "thumbnail-container";
+
+    const thumbnailVideoLink=document.createElement("a");
+    thumbnailVideoLink.href=videoLink
 
     const thumbnailImage = document.createElement("img");
     const basePath = "Images/Thumbnails/thumbnail";
@@ -16,14 +19,18 @@ function createVideo(thumbnailSrc, channellogo, videoTitle, channelname, videoSt
     durationtime.textContent = duration;
     durationtime.className = "duration";
 
-    thumbnailContainer.appendChild(thumbnailImage);
-    thumbnailContainer.appendChild(durationtime);
+    thumbnailVideoLink.appendChild(thumbnailImage);
+    thumbnailVideoLink.appendChild(durationtime);
+    thumbnailContainer.appendChild(thumbnailVideoLink);
 
     const v_info = document.createElement("div");
     v_info.className = "video-info";
 
     const channelLogo = document.createElement("div");
     channelLogo.className = "channel-logo";
+
+    const channelLogoLink=document.createElement("a");
+    channelLogoLink.href=channelLink;
 
     const channleLogo_Image = document.createElement("img");
     const basePath2 = "Images/Channel-logo/channel";
@@ -33,14 +40,21 @@ function createVideo(thumbnailSrc, channellogo, videoTitle, channelname, videoSt
     channleLogo_Image.alt = "channellogo";
     channleLogo_Image.className = "channel-img";
 
-    channelLogo.appendChild(channleLogo_Image);
+    channelLogoLink.appendChild(channleLogo_Image);
+    channelLogo.appendChild(channelLogoLink);
 
     const video_data = document.createElement("div");
     video_data.className = "video-info-content";
 
+    const videoTitleLink= document.createElement("a");
+    videoTitleLink.href=videoLink;
+
     const videotitle = document.createElement("p");
     videotitle.textContent = videoTitle;
     videotitle.className = "video-title";
+
+    const channelNameLink=document.createElement("a");
+    channelNameLink.href=channelLink;
 
     const channelName = document.createElement("p");
     channelName.textContent = channelname;
@@ -50,9 +64,12 @@ function createVideo(thumbnailSrc, channellogo, videoTitle, channelname, videoSt
     const videostats = document.createElement("p");
     videostats.textContent = videoStats;
     videostats.className = "video-stats";
+    
+    videoTitleLink.appendChild(videotitle);
+    channelNameLink.appendChild(channelName);
 
-    video_data.appendChild(videotitle);
-    video_data.appendChild(channelName);
+    video_data.appendChild(videoTitleLink);
+    video_data.appendChild(channelNameLink);
     video_data.appendChild(videostats);
 
     v_info.appendChild(channelLogo);
@@ -108,7 +125,7 @@ function uploadDuration(ud) {
     }
 }
 
-// array of data (videoLink , views , uploadDate, channelNames , videoTitles , duration ,)
+// array of data (videoLink , views , uploadDate, channelNames , videoTitles , duration , channelLink)
 
 video_urls = [
     "https://www.youtube.com/watch?v=MMfjVMJq790",
@@ -184,8 +201,26 @@ video_titles = [
     "Berserk - My Brother (Extended) (Definitive Version)",
     "JavaScript Full Course (2023) - Beginner to Pro - Part 2 Lesson 14",
 ]
+// thumbnail,video title - video link
+// channelLogo,channelname- channel link
 
-let duration = [[6, 43, 35], [13, 18], [54, 35], [6, 1], [23, 3], [1, 4, 1], [1, 6, 21], [8, 33], [6, 34], [1, 28, 43]]
+
+channel_Links=[
+    "https://www.youtube.com/@Chennaigeekz2",
+    "https://www.youtube.com/@Fireship",
+    "https://www.youtube.com/@SmvR",
+    "https://www.youtube.com/@letsexploreourdeen960",
+    "https://www.youtube.com/@veritasium",
+    "https://www.youtube.com/@CogitoEdu",
+    "https://www.youtube.com/@TheArmchairHistorian",
+    "https://www.youtube.com/@BeyondTheLoteTree",
+    "https://www.youtube.com/@joerogan",
+    "https://www.youtube.com/@GotROM",
+    "https://www.youtube.com/@unseenphantomamvsytp2186",
+    "https://www.youtube.com/@SuperSimpleDev",
+]
+
+let duration = [[6, 43, 35], [13, 18], [54, 35], [6, 1], [23, 3], [1, 4, 1], [1, 6, 21], [8, 33], [6, 34], [1, 28, 43]];
 
 let durationArray = videoDuration(duration);
 
@@ -195,7 +230,7 @@ let result = [];
 
 for (let i = 0; i < 12; i++) {
     result.push(uploadDuration(uploadDate[i]));
-    video[i] = createVideo(i+1, i+1, video_titles[i], channel_names[i], `${views[i]} views • ${result[i]}`, durationArray[i]);
+    video[i] = createVideo(i + 1, i + 1, video_titles[i], channel_names[i], `${views[i]} views • ${result[i]}`, durationArray[i], video_urls[i], channel_Links[i]);
     videosContainer.appendChild(video[i]);
 }
 

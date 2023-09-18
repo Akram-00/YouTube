@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="container">
     <header>
         <div class="left">
             <img src="Images/Icons/hamburger-menu.svg" alt="" class="hamburger-icon">
@@ -23,34 +24,79 @@
             <button class="voice-icon"><img src="Images/Icons/voice-search-icon.svg" alt=""></button>
         </div>
         <div class="right">
-            <img src="Images/Icons/upload.svg" alt="" class="right-icons">
-            <!-- <img src="Images/Icons/youtube-apps.svg" alt="" class="right-icons"> -->
-            <img src="Images/Icons/notifications.svg" alt="" class="right-icons">
-            <img src="Images/Icons/search.svg" alt="" class="right-icons" id="right-search">
-            <img src="Images/Icons/mylogo" alt="" class="right-icons" id="profile">
+            <div class="tooltip-container">
+                <img src="Images/Icons/upload.svg" alt="" class="right-icons">
+            </div>
+            <div class="tooltip-container">
+                <img src="Images/Icons/notifications.svg" alt="" class="right-icons">
+                <div class="notificaiton-no">6</div>
+            </div>
+            <div class="tooltip-container">
+                <img src="Images/Icons/search.svg" alt="" class="right-icons" id="right-search">
+            </div>
+            <div class="tooltip-container">
+                <img src="Images/Icons/mylogo" alt="" class="right-icons" id="profile">
+            </div>
         </div>
     </header>
     <nav class="side-bar">
         <div class="sidebar-link">
-            <img src="Images/Icons/home.svg" alt="">
-            <div>Home</div>
+            <a href="">
+                <img src="Images/Icons/home.svg" alt="">
+                <div>Home</div>
+            </a>
         </div>
         <div class="sidebar-link">
-            <img src="Images/Icons/explore.svg" alt="">
-            <div>Explore</div>
+            <a href="https://www.youtube.com/shorts/P9b1-I_8Iec">
+                <img src="Images/Icons/explore.svg" alt="">
+                <div>Explore</div>
+            </a>
         </div>
         <div class="sidebar-link">
-            <img src="Images/Icons/subscriptions.svg" alt="">
-            <div>Subscription</div>
+            <a href="https://www.youtube.com/feed/subscriptions">
+                <img src="Images/Icons/subscriptions.svg" alt="">
+                <div>Subscription</div>
+            </a>
         </div>
         <div class="sidebar-link">
-            <img src="Images/Icons/library.svg" alt="">
-            <div>Library</div>
+            <a href="https://www.youtube.com/feed/library">
+                <img src="Images/Icons/library.svg" alt="">
+                <div>Library</div>
+            </a>
         </div>
     </nav>
     <div class="main-section">
         <div class="videos-container" id="videos-container"></div>
     </div>
+    <!-- For mobile phone  -->
+    <nav class="down-bar">
+        <div class="sidebar-link">
+            <a href="">
+                <img src="Images/Icons/home.svg" alt="">
+                <div>Home</div>
+            </a>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/shorts/P9b1-I_8Iec">
+                <img src="Images/Icons/explore.svg" alt="">
+                <div>Explore</div>
+            </a>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/feed/subscriptions">
+                <img src="Images/Icons/subscriptions.svg" alt="">
+                <div>Subscription</div>
+            </a>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/feed/library">
+                <img src="Images/Icons/library.svg" alt="">
+                <div>Library</div>
+            </a>
+        </div>
+    </nav>
+    </div>
+
     <script src="Script.js"></script>
 </body>
 

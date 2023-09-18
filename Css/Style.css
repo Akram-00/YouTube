@@ -153,6 +153,22 @@ header {
     padding: 8px;
 }
 
+.notificaiton-no {
+    background-color: #cc0000;
+    border-radius: 80px;
+    position: absolute;
+    top: 12px;
+    right: 68px;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    padding: 0 5px;
+    pointer-events: none;
+}
+
 #profile {
     height: var(--size);
     padding: 0;
@@ -162,7 +178,8 @@ header {
 .right-icons:hover {
     background-color: #cccccc;
 }
-#right-search{
+
+#right-search {
     display: none;
 }
 
@@ -176,7 +193,7 @@ header {
     background-color: white;
 }
 
-.side-bar .sidebar-link {
+.side-bar .sidebar-link a {
     width: 72px;
     height: 76px;
     display: flex;
@@ -185,7 +202,9 @@ header {
     align-items: center;
     font-weight: 500;
     font-size: 9px;
-    cursor:pointer;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -207,14 +226,14 @@ header {
 }
 
 .thumbnail-container {
-    overflow:hidden;
+    overflow: hidden;
     margin-bottom: 8px;
     position: relative;
     border-radius: 12px;
 }
 
 .thumbnail {
-    margin:-11% 0;
+    margin: -11% 0;
     width: 100%;
     cursor: pointer;
 }
@@ -261,6 +280,12 @@ right: 8px; */
     margin-bottom: 2px;
     font-size: 13.5px;
     padding-right: 4px;
+    text-decoration: none;
+}
+
+.video-info-content a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .channel-name,
@@ -269,4 +294,8 @@ right: 8px; */
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+}
+
+.down-bar {
+    display: none;
 }
