@@ -234,7 +234,16 @@ for (let i = 0; i < 12; i++) {
     videosContainer.appendChild(video[i]);
 }
 
+const sbtn=document.getElementById('right-search');
+const back = document.getElementById('arrow-icon');
+const container=document.querySelector('.container');
 
+sbtn.addEventListener('click',function(){
+    container.style.display="none";
+})
 
+back.addEventListener('click',function(){
+    container.style.display="block";
+})
 
 
